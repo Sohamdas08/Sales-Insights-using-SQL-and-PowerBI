@@ -1,4 +1,4 @@
---sales_per_customer
+sales_per_customer
 
 
 SELECT 
@@ -11,3 +11,4 @@ FROM sales s
 JOIN customers c ON s.customer_id = c.customer_id
 GROUP BY c.customer_id, c.first_name, c.last_name
 ORDER BY total_sales DESC;
+
