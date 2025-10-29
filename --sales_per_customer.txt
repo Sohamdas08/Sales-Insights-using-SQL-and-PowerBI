@@ -1,0 +1,13 @@
+--sales_per_customer
+
+
+SELECT 
+    c.customer_id,
+    c.first_name,
+    c.last_name,
+    SUM(s.quantity) AS total_quantity,
+    SUM(s.selling_price * s.quantity) AS total_sales
+FROM sales s
+JOIN customers c ON s.customer_id = c.customer_id
+GROUP BY c.customer_id, c.first_name, c.last_name
+ORDER BY total_sales DESC;
