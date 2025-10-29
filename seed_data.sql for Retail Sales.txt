@@ -1,0 +1,33 @@
+-- Insert into products
+INSERT INTO products (product_id, product_name, category, description, mrp) VALUES
+(1,'Godrej','Cooling Appliance','184L 3star ref',21690),
+(2,'Godrej','Cooling Appliance','185L 5star ref',25890),
+(3,'Godrej','Cooling Appliance','194L 5star ref',26490),
+(10,'Godrej','Kitchen Appliance','23L microwave',18800),
+(18,'LG','Cooling Appliance','185L 5star ref',23799),
+(21,'LG','Laundry Appliance','6kg front-load washing machine',36990);
+
+
+
+
+
+-- Insert into customers
+INSERT INTO customers (customer_id, first_name, last_name, address, city, email) VALUES
+(1,'Devdas','Mallick','Nazrul Sarani, Birbhum','Sainthia','devdasmallick@gmail.com'),
+(2,'Sanchita','Mondal','Bazul Surani, Birbhum','Sainthia','mondalsanchi@gmail.com'),
+(3,'Pratik','Bagdi','Paka, Mayureswar, Birbhum','Sainthia',''),
+(8,'Chandan','Debnath','T Vivekananda Pally, Birbhum','Sainthia','debnathchandan007@gmail.com'),
+(11,'Sekh','Bilal','Station Road, Birbhum','Sainthia','bilalsk77@gmail.com');
+
+
+
+
+
+-- Insert into sales
+INSERT INTO sales (sale_id, product_id, customer_id, quantity, selling_price, payment_mode, sale_date) VALUES
+(1,1,1,1,14500,'Cash','2025-01-01'),
+(2,2,17,2,20500,'Cash','2025-01-01'),
+(3,4,36,4,17300,'Cash','2025-01-01'),
+(7,8,23,1,17900,'Cash','2025-01-03'),
+(11,21,19,16,15300,'Cash','2025-01-03'),
+(20,41,53,38,45500,'Cheque','2025-01-06');

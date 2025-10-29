@@ -1,0 +1,31 @@
+-- Database Schema for Retail Sales Analysis
+
+
+CREATE TABLE products (
+    product_id INT PRIMARY KEY,
+    product_name VARCHAR(200),
+    category VARCHAR(200),
+    description VARCHAR(200),
+    mrp INT
+);
+
+CREATE TABLE customers (
+    customer_id INT PRIMARY KEY,
+    first_name VARCHAR(500),
+    last_name VARCHAR(500),
+    address VARCHAR(500),
+    city VARCHAR(500),
+    email VARCHAR(100) UNIQUE
+);
+
+CREATE TABLE sales (
+    sale_id INT PRIMARY KEY,
+    product_id INT,
+    customer_id INT,
+    quantity INT,
+    selling_price DECIMAL(10,2),
+    payment_mode VARCHAR(20),
+    sale_date DATE,
+    FOREIGN KEY (product_id) REFERENCES products(product_id),
+    FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
+);
