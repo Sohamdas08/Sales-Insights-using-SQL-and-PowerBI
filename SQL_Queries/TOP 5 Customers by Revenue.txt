@@ -1,0 +1,11 @@
+TOP 5 Customers by Revenue
+SELECT 
+    c.customer_id,
+    c.first_name,
+    c.last_name,
+    SUM(s.selling_price * s.quantity) AS total_spent
+FROM sales s
+JOIN customers c ON s.customer_id = c.customer_id
+GROUP BY c.customer_id, c.first_name, c.last_name
+ORDER BY total_spent DESC
+LIMIT 5;
