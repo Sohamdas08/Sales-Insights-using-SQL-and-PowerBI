@@ -66,7 +66,7 @@ Top Salespersons – Displays sales contribution by individual representatives.
 
 ## Dashboard Snapshot
 
-[Power BI Dashboard](./Snapshot%20of%20the%20Dashboard.png)
+![Power BI Dashboard](./Snapshot%20of%20the%20Dashboard.png)
 
 
 
