@@ -143,9 +143,9 @@ Strengthened analytical and storytelling skills using real-world sales data.
 👨‍💻Author
 
 Soham Das
-Aspiring Data Analyst | SQL | Power BI | Excel | Python
+Aspiring Data Analyst | SQL | Power BI | Excel 
 📍 India
-📧 [dasoham63@gmail.com]
+📧 [dassoham63@gmail.com]
 🔗 LinkedIn Profile
  (https://www.linkedin.com/in/soham-das-884a1a315/)
 
