@@ -15,6 +15,8 @@ public_customers	Contains customer demographic details such as name, address, an
 public_products	Holds product-related information including name, category, description, and MRP.
 public_sales	Transaction table capturing sales quantity, selling price, sale date, and payment mode.
 Date	Custom date dimension table containing Year, Month, Quarter, and Day attributes.
+
+
 Relationships
 
 public_sales[customer_id] → public_customers[customer_id]
@@ -26,11 +28,14 @@ public_sales[sale_date] → Date[Date]
 This star schema model enables efficient filtering, aggregation, and trend analysis.
 
 Tools & Technologies Used
-Tool / Technology	Purpose
+
 SQL	Data cleaning, transformation, and creation of analytical queries.
 Power BI	Data modeling, DAX calculations, and dashboard visualization.
 Excel	Used for initial data verification and inspection.
 DAX (Data Analysis Expressions)	To create calculated measures and KPIs.
+
+
+
 Key Metrics and KPIs
 
 Total Revenue: ₹5M
@@ -43,9 +48,15 @@ Average Sales per Customer: ₹28K
 
 These KPIs were calculated using DAX expressions to measure sales performance and customer engagement for January 2025.
 
+
+
+
 Dashboard Highlights
 
 The Power BI Dashboard provides comprehensive insights into the company’s one-month sales operations.
+
+
+
 
 Main Visuals
 
@@ -82,7 +93,11 @@ Sainthia emerged as the highest revenue-generating city with ₹4.3M sales.
 
 Sales were primarily concentrated in January 2025, indicating a short-term performance snapshot.
 
+
+
 Snapshots
+
+
 Customers Table
 
 Date Table
